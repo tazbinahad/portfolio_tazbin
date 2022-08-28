@@ -1,0 +1,25 @@
+@mixin resetButtonCss {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.t_button {
+  button {
+    @include resetButtonCss;
+    height: 35px;
+    padding: 0 25px;
+    background-color: var(--primary_color_2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    // &.primary_button {
+    //   background-color: var(--primary_color);
+    // }
+  }
+}

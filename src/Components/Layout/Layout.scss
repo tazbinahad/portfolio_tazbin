@@ -1,0 +1,29 @@
+$left_menu_width: 305px;
+$right_menu_width: 108px;
+$left_right_background: var(--white);
+.main_layout {
+  display: flex;
+  justify-content: space-between;
+  .left_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $left_menu_width;
+    height: 100vh;
+    background-color: $left_right_background;
+  }
+  .main_content {
+    margin-left: $left_menu_width;
+    margin-right: $right_menu_width;
+    padding: 0 30px;
+    width: 100%;
+  }
+  .right_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 108px;
+    height: 100vh;
+    background-color: $left_right_background;
+  }
+}
